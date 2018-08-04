@@ -1,0 +1,43 @@
+h1 {
+  color: green;
+}
+
+h1 > div {
+  font-size: 0.65em;
+}
+
+body {
+  text-align: center;
+  margin: auto;
+}
+
+button:hover > *{
+  cursor: pointer;
+  color: #5ff442;
+}
+
+.thinking {
+  display: block;
+}
+
+.resultsPanel {
+  max-width: 280px;
+  min-width: 140px;
+  margin: 6px auto  4px auto;
+}
+
+.resultsPanel ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+  font-size: 1.35em;
+  font-weight: 500;
+}
+
+.computerFace {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
