@@ -1,7 +1,7 @@
 # Rock_Paper_Scissors_React
 
 
-This is a simple Rock Paper Scissors game built in React, to deminstrat basics of client & server communication.
+This is a simple Rock Paper Scissors game built in React, to demonstrate basics of client & server communication.
 PS. The computer player is a sore loser.
 
 
