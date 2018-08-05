@@ -6,5 +6,6 @@ export default function PostMove (choice){
         //mode: 'CORS',
         body: JSON.stringify({choice}),
         headers: {'Content-Type': 'application/json'}
-      }).then(res => res.json()).then(data => data).catch(err => console.log('error',err));
+      }).then(res => res.json())
+        .then(data => data).catch(err => { error: err });
 }

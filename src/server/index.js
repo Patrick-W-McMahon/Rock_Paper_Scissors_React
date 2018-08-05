@@ -46,9 +46,9 @@ app.post('/api/match', (req, res) => {
             return res.status(400).json({ message: "'choice' param must be rock, paper, or scissors" });
         }
         // Send 500 ISE randomly 1 out of 10 times
-        // if (getRandomInt(1,10) === 1) {
-        //     return res.status(500).json({message: "Internal Server Error"});
-        // }
+        if (getRandomInt(1,10) === 1) {
+            return res.status(500).json({message: "Internal Server Error"});
+        }
         const computerChoice = rand(playableOptions);
         const result = playGame(playerChoice, computerChoice);
         const face = rand(computerFace[result]);
